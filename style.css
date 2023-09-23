@@ -1,0 +1,46 @@
+* {
+    outline: none;
+}
+
+header,
+main,
+footer {
+    margin: 1rem;
+}
+
+a {
+    color: rgb(100, 100, 100);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+#subtitle {
+    font-family: monospace;
+    font-size: 12px;
+    display: block;
+}
+
+.footer {
+    color: rgb(170, 170, 170);
+    margin-top: auto;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.mono {
+    display: inline;
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.links {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.primary {
+    color: rgb(255, 69, 69);
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        
+    </head> -->
+    <head>
+        <title>~ayush</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="author" content="ayushm" />
+        <meta name="robots" content="noindex" />
+        <meta name="description" content="~ayush on envs.net" />
+        <meta name="keywords" content="profile" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://envs.net/css/css_style.css" />
+        <link
+            rel="stylesheet"
+            href="https://envs.net/css/fork-awesome.min.css"
+        />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <p id="title" class="text">ayush.</p>
+            <p id="subtitle" class="text">non award winning programmer.</p>
+        </header>
+        <main class="main">
+            <ul class="links">
+                <li>
+                    <p class="mono">
+                        fingerprint:
+                        <a
+                            href="https://keys.openpgp.org/vks/v1/by-keyid/3C8C6F4D80E9E4A7"
+                            >3C8C6F4D80E9E4A7</a
+                        >
+                    </p>
+                </li>
+                <li>
+                    <p class="mono">
+                        keybase: <a href="https://keybase.io/ayushm">ayushm</a>
+                    </p>
+                </li>
+                <li>
+                    <p class="mono">
+                        email:
+                        <a href="mailto:ayush@envs.net">ayush@envs.net</a>
+                        &nbsp;
+                        <a href="mailto:ayush@thunix.net">ayush@thunix.net</a>
+                        &nbsp;
+                        <span class="primary">*</span>
+                        <a href="mailto:aym@protonmail.ch">aym@pm.me</a>
+                        (primary)
+                    </p>
+                </li>
+            </ul>
+        </main>
+
+        <footer class="footer">
+            <div class="quote-container">
+                <p id="quote" class="text"></p>
+                <p id="author" class="text"></p>
+            </div>
+        </footer>
+
+        <script>
+            fetch("https://stoicquotesapi.com/v1/api/quotes/random")
+                .then((response) => response.json())
+                .then((response) => {
+                    console.log(response);
+                    document.getElementById("quote").innerText = response.body;
+                    document.getElementById("author").innerText =
+                        "- " + response.author;
+                })
+                .catch((error) => console.log(error));
+        </script>
+    </body>
+</html>
+
