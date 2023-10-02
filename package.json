@@ -8,15 +8,19 @@
     "start": "next start -p 3333",
     "lint": "next lint",
     "prep": "git pull && yarn build",
-    "deploy": "yarn prep && pm2 restart ecosystem.config.js"
+    "deploy": "yarn prep && pm2 restart ecosystem.config.js --update-env"
   },
   "dependencies": {
     "@emotion/css": "^11.11.2",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "axios": "^1.5.1",
     "next": "latest",
+    "querystring": "^0.2.1",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-icons": "^4.11.0",
+    "swr": "^2.2.4"
   },
   "devDependencies": {
     "@types/node": "latest",

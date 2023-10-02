@@ -6,8 +6,7 @@ import styled from "@emotion/styled";
 // `;
 
 export const BodyWrapper = styled.div`
-    font-family: monospace;
-    padding: 3rem;
+    font-family: "Roboto Mono", "Martian Mono", monospace;
 `;
 
 export const Text = styled.p`

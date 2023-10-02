@@ -4,8 +4,13 @@ import { BodyWrapper, Link, Primary, Text } from "./Styles";
 const Body: React.FC = (): JSX.Element => {
     return (
         <BodyWrapper>
-            <Text>ayush.</Text>
+            <Text><Primary>*</Primary> ayush.</Text>
             <Text>non award winning programmer</Text>
+            <Text>
+                email:
+                &nbsp;
+                <Link href="mailto:aym@protonmail.ch">aym@protonmail.ch</Link>
+            </Text>
             <Text>
                 pgp:
                 &nbsp;
@@ -19,16 +24,6 @@ const Body: React.FC = (): JSX.Element => {
                 <Link href="https://keybase.io/ayushm">
                     ayushm
                 </Link>
-            </Text>
-            <Text>
-                email:
-                &nbsp;
-                <Primary>*</Primary>
-                &nbsp;
-                <Link href="mailto:aym@protonmail.ch">aym@protonmail.ch</Link>
-                &nbsp;
-                &nbsp;
-                <Link href="mailto:ayush@envs.net">ayush@envs.net</Link>
             </Text>
         </BodyWrapper>
     );
