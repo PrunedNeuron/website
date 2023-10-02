@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p 3333",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prep": "git pull && yarn build",
+    "deploy": "yarn prep && pm2 restart ecosystem.config.js"
   },
   "dependencies": {
     "@emotion/css": "^11.11.2",
