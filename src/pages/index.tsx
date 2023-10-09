@@ -11,7 +11,6 @@ const Index: React.FC = (): JSX.Element => {
     <PageLayout>
       {/* <Header /> */}
       <Body />
-      <NowPlaying />
     </PageLayout>
   );
 };
